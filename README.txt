@@ -29,7 +29,18 @@ NOTAS
 - Las fechas especiales están configuradas dentro de index.html y pueden editarse en el array specialRanges.
 
 
-ACTUALIZACIÓN VISUAL DE PRESUPUESTOS
-- PDF A4 con cabecera de marca, número de presupuesto, fecha de emisión, datos de reserva, desglose y total destacado.
-- Aviso visible: PRESUPUESTO · NO ES FACTURA. Incluye una nota indicando que no acredita el pago ni sustituye una factura.
-- La caché de la aplicación se ha actualizado a huella-v3.
+NUEVO DISEÑO DE PRESUPUESTOS (v4) Y CAMBIOS DE LA v5
+- PDF A4 de estilo sobrio: logo de la huella dibujado en vector, nombre y lema, "PRESUPUESTO" y sello "NO ES FACTURA".
+- Número de presupuesto, fecha de emisión y fecha de validez en una fila.
+- Bloques separados de Cliente y Reserva (servicio, entrada y salida).
+- Tabla con tres columnas: Concepto, Detalle e Importe. El nombre de cada perro aparece en su línea.
+- Total destacado, aviso de tarifa de temporada especial cuando se aplica, criterio de horas extra (noche) y condiciones.
+- Pie en todas las páginas con "Presupuesto no válido como factura" y numeración "Página X de Y".
+- v5: paleta cálida (beige, café con leche y caramelo) y huella decorativa de fondo.
+- v5: guardería de día = una sola fecha. Guardería de noche = un único calendario donde se toca la fecha de entrada y después la de salida (rango resaltado). Las horas de entrada y salida siguen separadas.
+- Las fechas de tarifa especial se marcan con un punto dorado en el calendario.
+- La caché de la aplicación pasa a huella-v5.
+
+AJUSTES RÁPIDOS (al principio del script de index.html)
+- VALIDITY_DAYS: días de validez del presupuesto (ahora 15).
+- BUSINESS.contact: teléfono, email o web que se imprime bajo el logo (ahora vacío = no se muestra).
