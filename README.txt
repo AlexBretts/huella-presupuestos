@@ -27,3 +27,9 @@ NOTAS
 - La app no almacena ni envía los datos del cliente a un servidor; el PDF se genera en el dispositivo.
 - La creación del PDF usa jsPDF desde CDN y requiere conexión a internet para cargar esa librería.
 - Las fechas especiales están configuradas dentro de index.html y pueden editarse en el array specialRanges.
+
+
+ACTUALIZACIÓN VISUAL DE PRESUPUESTOS
+- PDF A4 con cabecera de marca, número de presupuesto, fecha de emisión, datos de reserva, desglose y total destacado.
+- Aviso visible: PRESUPUESTO · NO ES FACTURA. Incluye una nota indicando que no acredita el pago ni sustituye una factura.
+- La caché de la aplicación se ha actualizado a huella-v3.
